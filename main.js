@@ -26,7 +26,7 @@ for (let i = 0; i < cantidadalumnos; i++) {
 }
 
 console.log(
-  "Bienvenida profe " +
+  "Hola " +
     nombreprofesor +
     ", a continuación usted puede ver su listado de alumnos del curso " +
     curso +
@@ -51,14 +51,14 @@ if (aprobados.length > 0) {
   console.log("Los alumnos aprobados son:");
   console.table(aprobados);
 } else {
-  console.log("lo sentimos, no hay alumnos aprobados");
+  console.log("no hay alumnos aprobados");
 }
 
 if (desaprobados.length > 0) {
   console.log("Los alumnos desaprobados son:");
   console.table(desaprobados);
 } else {
-  console.log("Felicitaciones! no hay alumnos desaprobados");
+  console.log("no hay alumnos desaprobados");
 }
 
 let mejornota = 0;
@@ -119,7 +119,7 @@ function promedio() {
     while (isNaN(nota) || nota < 1 || nota > 10) {
       nota = parseFloat(
         prompt(
-          "La nota ingresada es inválida, por favor ingrese un valor entre 1 y 10 expresado en DÍGITOS."
+          "La nota ingresada es inválida, por favor ingrese un valor entre 1 y 10."
         )
       );
     }
